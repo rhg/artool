@@ -1,0 +1,6 @@
+libs =
+import libs += libqtcore%lib{Qt5Core} libqtnetwork%lib{Qt5Network}
+
+exe{artool}: {hxx ixx txx cxx}{**} $libs testscript
+
+cxx.poptions =+ "-I$out_root" "-I$src_root"

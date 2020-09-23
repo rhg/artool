@@ -1,0 +1,11 @@
+: 1
+name: artool
+version: 0.1.0-a.0.z
+summary: artool C++ executable
+license: CC0-1.0
+description-file: README.md
+url: https://example.org/artool
+email: ricardo.gomez331@gmail.com
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0
+#depends: libhello ^1.0.0

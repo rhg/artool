@@ -12,4 +12,6 @@ RUN curl -sSfO https://download.build2.org/0.13.0/build2-install-0.13.0.sh \
     && sh build2-install-0.13.0.sh --cxx g++ --yes --trust yes /opt/build2 \
     && rm -rf build2*
 
+RUN pip install --user compiledb
+
 ENV PATH=/opt/build2/bin:$PATH
